@@ -5,31 +5,31 @@ var questions = [
         question: "Which player transfered from Bayern Munich to Real Madrid?",
         choices: ["Jovic", "Danilo", "Varane", "Kroos"],
         answer: 3,
-        pic: "../images/kroos.jpg"
+        pic: "./images/kroos.jpg"
     },
     {
         question: "Which player was the first to win a Balllon D'Or following the reign of Messi and Ronaldo?",
         choices: ["Hazard", "Neymar", "Modric", "Neuer"],
         answer: 2,
-        pic: "../images/modric.jpg"
+        pic: "./images/modric.jpg"
     },
     {
         question: "Who is the greatest player of all time?",
         choices: ["Cristiano Ronaldo", "Zidane", "Maradona", "Ronaldo"],
         answer: 0,
-        pic: "../images/ronaldo.jpg"
+        pic: "./images/ronaldo.jpg"
     },
     {
         question: "Who scored the famous tying goal in Real Madrid's La Decima Campaign?",
         choices: ["Di Maria", "Casemiro", "Ramos", "Carvajal"],
         answer: 2,
-        pic: "../images/ramos.jpg"
+        pic: "./images/ramos.jpg"
     },
     {
         question: "Who is the second coming of Roberto Carlos, but with hair?",
         choices: ["Marcelo", "Bale", "Navas", "Modric"],
         answer: 0,
-        pic: "../images/marcelo.jpg"
+        pic: "./images/marcelo.jpg"
     }];
 // vars
 var timer = 20;
@@ -64,7 +64,7 @@ function startTimer() {
 };
 //decrement timer function
 function decrement() {
-    $("#time").html("<h2>Time left: " + timer + "</h2>");
+    $("#timer").html("<h2>Time left: " + timer + "</h2>");
     timer --;
     if (timer === 0) {
         unanswered++;
